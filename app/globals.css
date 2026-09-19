@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes casinoSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+
+.spinning-wheel {
+  animation: casinoSpin 3s cubic-bezier(0.15, 0.85, 0.35, 1) infinite;
+}
+
+.wheel-glow {
+  box-shadow: 0 0 50px rgba(234, 179, 8, 0.4), inset 0 0 20px rgba(0, 0, 0, 0.8);
+}
